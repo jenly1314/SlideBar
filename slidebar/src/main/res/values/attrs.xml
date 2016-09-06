@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SlideBar">
+        <attr name="android:textSize"/>
+        <attr name="android:textColor"/>
+        <attr name="slideBar_chooseTextColor" format="color"/>
+        <attr name="slideBar_backgroundColor" format="color"/>
+        <attr name="slideBar_chooseBackgroundColor" format="color"/>
+    </declare-styleable>
+
+</resources>
