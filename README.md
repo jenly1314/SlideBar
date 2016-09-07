@@ -23,11 +23,12 @@ compile 'com.king.slidebar:SlideBar:0.1'
 </dependency>
 ```
 
-详情请查看[我的博客](http://blog.csdn.net/jenly121/article/details/48466641)
+
+具体实现详情请戳[传送门](http://blog.csdn.net/jenly121/article/details/48466641)
 
 ## License
 
-    Copyright 2015, 2016 Jenly Yu 
+    Copyright © 2015, 2016 Jenly Yu 
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
