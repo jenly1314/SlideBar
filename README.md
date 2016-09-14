@@ -1,7 +1,7 @@
 # SlideBar
 [![Build Status](https://travis-ci.org/jenly1314/SlideBar.svg?branch=master)](https://travis-ci.org/jenly1314/SlideBar)
 [![Issue Count](https://codeclimate.com/github/jenly1314/SlideBar/badges/issue_count.svg)](https://codeclimate.com/github/jenly1314/SlideBar)
-[![License](http://www.apache.org/licenses/LICENSE-2.0)](http://www.apache.org/licenses/LICENSE-2.0)
+[![Bintray](https://img.shields.io/badge/blog-jenly-green.svg](http://blog.csdn.net/jenly121)
 
 SlideBar for Android 一个很好用的联系人快速索引
 
