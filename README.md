@@ -1,4 +1,7 @@
 # SlideBar
+[![Build Status](https://travis-ci.org/jenly1314/SlideBar.svg?branch=master)](https://travis-ci.org/jenly1314/SlideBar)
+[![License](http://www.apache.org/licenses/LICENSE-2.0)]
+
 SlideBar for Android 一个很好用的联系人快速索引
 
 ##引入
