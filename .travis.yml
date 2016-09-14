@@ -14,11 +14,7 @@ android:
 notifications:
   email: false
 
-install:true
-
 before_script:
   - chmod +x gradlew
 
-script:
-  - ./gradlew build
 
