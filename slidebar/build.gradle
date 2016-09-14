@@ -1,4 +1,6 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'
+apply plugin: 'maven'
 
 android {
     compileSdkVersion 24
@@ -23,4 +25,14 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:24.1.1'
     compile 'com.android.support:support-annotations:24.0.0'
+}
+
+//添加
+publish {
+    userOrg = 'jenly'//bintray.com用户名
+    groupId = 'com.king.slidebar'//jcenter上的路径
+    artifactId = 'SlideBar'//项目名称
+    publishVersion = '0.1'//版本号
+    desc = 'SlideBar for Android'//描述，不重要
+    website = 'https://github.com/jenly1314/SlideBar'//网站，不重要；尽量模拟github上的地址，例如我这样的；当然你有地址最好了
 }

@@ -1,0 +1,15 @@
+language: android
+
+android:
+  components:
+    - build-tools-24.0.0
+    - android-24
+    - extra-android-support
+    - extra-android-m2repository
+    - sys-img-armeabi-v7a-android-24
+
+  licenses:
+    - '.+'
+notifications:
+  email: false
+

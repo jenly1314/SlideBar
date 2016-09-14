@@ -15,7 +15,7 @@ import android.view.View;
 
 /**
  * A~Z快速索引
- * @author Jenly <jenly1314@gmail.com>
+ * @author Jenly <a href="mailto:jenly1314@gmail.com">Jenly</a>
  */
 public class SlideBar extends View{
 
