@@ -12,9 +12,11 @@ android:
   licenses:
     - '.+'
 notifications:
-  email: false
+    email: false
 
 before_script:
-  - chmod +x gradlew
+#    - chmod +x gradlew
 
+script:
+    - ./gradlew assembleDebug
 
