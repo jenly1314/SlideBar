@@ -1,4 +1,5 @@
 # SlideBar
+[![](https://jitpack.io/v/jenly1314/SlideBar.svg)](https://jitpack.io/#jenly1314/SlideBar)
 [![Build Status](https://travis-ci.org/jenly1314/SlideBar.svg?branch=master)](https://travis-ci.org/jenly1314/SlideBar)
 [![Issue Count](https://codeclimate.com/github/jenly1314/SlideBar/badges/issue_count.svg)](https://codeclimate.com/github/jenly1314/SlideBar)
 [![License](https://img.shields.io/badge/license-Apche%202.0-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0)
