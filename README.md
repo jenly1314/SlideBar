@@ -7,9 +7,9 @@
 
 SlideBar for Android 一个很好用的联系人快速索引
 
-##引入
+## 引入
 
-###Maven：
+### Maven：
 ```
 <dependency>
   <groupId>com.king.slidebar</groupId>
@@ -18,11 +18,11 @@ SlideBar for Android 一个很好用的联系人快速索引
   <type>pom</type>
 </dependency>
 ```
-###Gradle:
+### Gradle:
 ```
 compile 'com.king.slidebar:SlideBar:0.1'
 ```
-###Lvy:
+### Lvy:
 ```
 <dependency org='com.king.slidebar' name='SlideBar' rev='0.1'>
   <artifact name='$AID' ext='pom'></artifact>
