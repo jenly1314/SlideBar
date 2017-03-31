@@ -7,6 +7,12 @@
         <attr name="slideBar_chooseTextColor" format="color"/>
         <attr name="slideBar_backgroundColor" format="color"/>
         <attr name="slideBar_chooseBackgroundColor" format="color"/>
+        <attr name="slideBar_style">
+            <enum name="default_" value="0"/>
+            <enum name="none" value="1"/>
+            <enum name="circle" value="2"/>
+            <enum name="stretch" value="3"/>
+        </attr>
     </declare-styleable>
 
 </resources>

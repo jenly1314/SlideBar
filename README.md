@@ -1,30 +1,50 @@
 # SlideBar
-SlideBar for Android 一个很好用的联系人快速索引
+[![](https://jitpack.io/v/jenly1314/SlideBar.svg)](https://jitpack.io/#jenly1314/SlideBar)
+[![License](https://img.shields.io/badge/license-Apche%202.0-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0)
+[![Blog](https://img.shields.io/badge/blog-Jenly-9933CC.svg)](http://blog.csdn.net/jenly121)
+SlideBar for Android 一个很好用的联系人快速索引。
 
-##引入
+## Gif 展示
+![Image](GIF.gif)
 
-###Maven：
+## 引入
+
+### Maven：
 ```
 <dependency>
-  <groupId>com.king.slidebar</groupId>
+  <groupId>com.king.view</groupId>
   <artifactId>SlideBar</artifactId>
-  <version>0.1</version>
+  <version>1.0</version>
   <type>pom</type>
 </dependency>
 ```
-###Gradle:
+### Gradle:
 ```
-compile 'com.king.slidebar:SlideBar:0.1'
+compile 'com.king.view:SlideBar:1.0'
 ```
-###Lvy:
+### Lvy:
 ```
-<dependency org='com.king.slidebar' name='SlideBar' rev='0.1'>
+<dependency org='com.king.view' name='SlideBar' rev='1.0'>
   <artifact name='$AID' ext='pom'></artifact>
 </dependency>
 ```
 
 
 具体实现详情请戳[传送门](http://blog.csdn.net/jenly121/article/details/48466641)
+
+
+## 关于我
+   Name: Jenly
+
+   Email: jenly1314@gmail.com / jenly1314@vip.qq.com
+
+   CSDN: http://www.csdn.net/jenly121
+
+   Github: https://github.com/jenly1314
+
+   微信公众号:
+
+   ![公众号](http://olambmg9j.bkt.clouddn.com/jenly666.jpg)
 
 ## License
 
