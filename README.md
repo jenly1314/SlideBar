@@ -2,6 +2,7 @@
 [![](https://jitpack.io/v/jenly1314/SlideBar.svg)](https://jitpack.io/#jenly1314/SlideBar)
 [![License](https://img.shields.io/badge/license-Apche%202.0-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0)
 [![Blog](https://img.shields.io/badge/blog-Jenly-9933CC.svg)](http://blog.csdn.net/jenly121)
+
 SlideBar for Android 一个很好用的联系人快速索引。
 
 ## Gif 展示
