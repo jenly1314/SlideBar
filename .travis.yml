@@ -1,20 +1,19 @@
-    language: android
+language: android   # 声明构建语言环境
 
-android:
+notifications:      # 每次构建的时候是否通知，如果不想收到通知邮箱，那就设置false吧
+  email: false
+
+sudo: false         # 开启基于容器的Travis CI任务，让编译效率更高。
+
+android:            # 配置信息
   components:
     - tools
-    - build-tools-24.0.0
+    - build-tools-25.0.0
     - android-24
-    - extra-android-support
-    - extra-android-m2repository
-    - sys-img-armeabi-v7a-android-24
+    - extra-android-m2repository     # Android Support Repository
+    - extra-android-support          # Support Library
 
-  licenses:
-    - '.+'
-notifications:
-    email: false
-
-before_script:
-    - chmod +x gradlew
+before_install:
+ - chmod +x gradlew  # 改变gradlew的访问权限
 
 
