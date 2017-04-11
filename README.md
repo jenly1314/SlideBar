@@ -15,18 +15,18 @@ SlideBar for Android 一个很好用的联系人快速索引。
 ```
 <dependency>
   <groupId>com.king.view</groupId>
-  <artifactId>SlideBar</artifactId>
+  <artifactId>slidebar</artifactId>
   <version>1.1.0</version>
   <type>pom</type>
 </dependency>
 ```
 ### Gradle:
 ```
-compile 'com.king.view:SlideBar:1.1.0'
+compile 'com.king.view:slidebar:1.1.0'
 ```
 ### Lvy:
 ```
-<dependency org='com.king.view' name='SlideBar' rev='1.1.0'>
+<dependency org='com.king.view' name='slidebar' rev='1.1.0'>
   <artifact name='$AID' ext='pom'></artifact>
 </dependency>
 ```

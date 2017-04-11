@@ -31,7 +31,7 @@ dependencies {
 publish {
     userOrg = 'jenly'//bintray.com用户名
     groupId = 'com.king.view'//jcenter上的路径
-    artifactId = 'SlideBar'//项目名称
+    artifactId = 'slidebar'//项目名称
     publishVersion = '1.1.0'//版本号
     desc = 'SlideBar for Android'//描述，不重要
     website = 'https://github.com/jenly1314/SlideBar'//网站
