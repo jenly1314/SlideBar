@@ -14,7 +14,7 @@ import com.king.slidebar.bean.Contact;
 import com.king.slidebar.presenter.ContactPresenter;
 import com.king.slidebar.util.PinyinUtil;
 import com.king.slidebar.view.IContactView;
-import com.king.view.SlideBar;
+import com.king.view.slidebar.SlideBar;
 
 import java.util.List;
 

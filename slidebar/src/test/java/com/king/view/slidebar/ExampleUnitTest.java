@@ -1,4 +1,4 @@
-package com.king.view;
+package com.king.view.slidebar;
 
 import org.junit.Test;
 

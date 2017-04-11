@@ -1,4 +1,5 @@
 # SlideBar
+[![Download](https://img.shields.io/badge/download-App-blue.svg)](https://raw.githubusercontent.com/jenly1314/SlideBar/master/app/app-release.apk)
 [![](https://jitpack.io/v/jenly1314/SlideBar.svg)](https://jitpack.io/#jenly1314/SlideBar)
 [![License](https://img.shields.io/badge/license-Apche%202.0-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0)
 [![Blog](https://img.shields.io/badge/blog-Jenly-9933CC.svg)](http://blog.csdn.net/jenly121)
@@ -15,17 +16,17 @@ SlideBar for Android 一个很好用的联系人快速索引。
 <dependency>
   <groupId>com.king.view</groupId>
   <artifactId>SlideBar</artifactId>
-  <version>1.0</version>
+  <version>1.1.0</version>
   <type>pom</type>
 </dependency>
 ```
 ### Gradle:
 ```
-compile 'com.king.view:SlideBar:1.0'
+compile 'com.king.view:SlideBar:1.1.0'
 ```
 ### Lvy:
 ```
-<dependency org='com.king.view' name='SlideBar' rev='1.0'>
+<dependency org='com.king.view' name='SlideBar' rev='1.1.0'>
   <artifact name='$AID' ext='pom'></artifact>
 </dependency>
 ```

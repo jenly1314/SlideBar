@@ -5,15 +5,12 @@ import android.content.Context;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Handler;
-import android.os.Looper;
 import android.os.Message;
 import android.provider.ContactsContract;
-import android.support.v7.view.menu.ShowableListMenu;
 
 import com.king.slidebar.bean.Contact;
 import com.king.slidebar.dao.ContactDao;
 import com.king.slidebar.view.IContactView;
-import com.king.view.SlideBar;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.king.view;
+package com.king.view.slidebar;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -13,6 +13,7 @@ import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.view.MotionEvent;
 import android.view.View;
+
 
 /**
  * A~Z快速索引
@@ -115,7 +116,7 @@ public class SlideBar extends View{
 
         rectBound = new Rect();
 
-        TypedArray a = context.obtainStyledAttributes(attrs,R.styleable.SlideBar);
+        TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.SlideBar);
 
         textSize = a.getDimensionPixelSize(R.styleable.SlideBar_android_textSize, (int)TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP,16,getResources().getDisplayMetrics()));
         defaultColor = a.getColor(R.styleable.SlideBar_android_textColor,Color.BLACK);
