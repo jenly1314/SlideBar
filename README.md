@@ -31,7 +31,7 @@ compile 'com.king.view:slidebar:1.1.0'
 </dependency>
 ```
 
-如果Gradle出现compile失败的话在Project的build.gradle里面请添加
+#### 如果Gradle出现compile失败的话在Project的build.gradle里面请添加（也通过可以使用上面的gitpack来complie）
 ```gradle
 allprojects {
     repositories {
