@@ -12,7 +12,7 @@ SlideBar for Android 一个很好用的联系人快速索引。
 ## 引入
 
 ### Maven：
-```
+```maven
 <dependency>
   <groupId>com.king.view</groupId>
   <artifactId>slidebar</artifactId>
@@ -21,16 +21,24 @@ SlideBar for Android 一个很好用的联系人快速索引。
 </dependency>
 ```
 ### Gradle:
-```
+```gradle
 compile 'com.king.view:slidebar:1.1.0'
 ```
 ### Lvy:
-```
+```lvy
 <dependency org='com.king.view' name='slidebar' rev='1.1.0'>
   <artifact name='$AID' ext='pom'></artifact>
 </dependency>
 ```
 
+如果Gradle出现compile失败的话在Project的build.gradle里面请添加
+```gradle
+allprojects {
+    repositories {
+        maven { url 'https://dl.bintray.com/jenly/maven' }
+    }
+}
+```
 
 具体实现详情请戳[传送门](http://blog.csdn.net/jenly121/article/details/48466641)
 
@@ -40,7 +48,7 @@ compile 'com.king.view:slidebar:1.1.0'
 
    Email: jenly1314@gmail.com / jenly1314@vip.qq.com
 
-   CSDN: http://www.csdn.net/jenly121
+   CSDN: http://blog.csdn.net/jenly121
 
    Github: https://github.com/jenly1314
 
