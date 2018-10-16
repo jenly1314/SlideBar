@@ -2,14 +2,15 @@ package com.king.slidebar.bean;
 
 import android.text.TextUtils;
 
-import com.king.slidebar.util.PinyinUtil;
+import com.king.view.slidebar.IndexHelper;
+import com.king.view.slidebar.PinyinUtil;
 
 /**
  * @author Jenly <a href="mailto:jenly1314@gmail.com">Jenly</a>
  * @since 2017/3/31
  */
 
-public class Contact {
+public class Contact implements IndexHelper.IIndexKey {
 
     long id;
 
@@ -37,7 +38,7 @@ public class Contact {
 
     public void setName(String name) {
         this.name = name;
-        if(!TextUtils.isEmpty(name)){
+        if (!TextUtils.isEmpty(name)) {
             key = PinyinUtil.formatAlpha(name);
         }
     }
@@ -72,5 +73,10 @@ public class Contact {
 
     public void setKey(String key) {
         this.key = key;
+    }
+
+    @Override
+    public String getIndexKey() {
+        return key;
     }
 }

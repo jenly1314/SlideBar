@@ -22,22 +22,24 @@ public class ContactDao {
     public static final String[] projection = {ContactsContract.CommonDataKinds.Phone._ID, ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME,
             ContactsContract.CommonDataKinds.Phone.DATA1, ContactsContract.CommonDataKinds.Phone.SORT_KEY_PRIMARY};
 
-    public static List<Contact> getListContact(Context context){
+    public static List<Contact> getListContact(Context context) {
 
-        Cursor cursor = context.getContentResolver().query(ContactsContract.CommonDataKinds.Phone.CONTENT_URI,
-                projection, "data1 is not null",
-                null, "sort_key COLLATE LOCALIZED ASC");
+        Cursor cursor = context.getContentResolver().query(ContactsContract.CommonDataKinds.Phone.CONTENT_URI
+                , projection
+                , "data1 is not null"
+                , null
+                , "sort_key COLLATE LOCALIZED ASC");
 
         return getListContact(cursor);
 
     }
 
-    public static List<Contact> getListContact(Cursor cursor){
+    public static List<Contact> getListContact(Cursor cursor) {
 
         List<Contact> list = new ArrayList<>();
 
-        if(cursor != null){
-            while(cursor.moveToNext()){
+        if (cursor != null) {
+            while (cursor.moveToNext()) {
                 Contact c = new Contact();
                 c.setId(cursor.getInt(cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone._ID)));
                 c.setName(cursor.getString(cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME)));

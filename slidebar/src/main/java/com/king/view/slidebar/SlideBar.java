@@ -47,7 +47,7 @@ public class SlideBar extends View{
     private Rect rectBound;
 
     /** 字母改变监听 */
-    private OnTouchLetterChangeListenner onTouchLetterChangeListenner;
+    private OnTouchLetterChangeListener onTouchLetterChangeListener;
 
     /** 字母数组 */
     private String[] letters = { "A", "B", "C", "D", "E", "F", "G",
@@ -181,10 +181,10 @@ public class SlideBar extends View{
 
     /**
      * 设置字母改变回调监听
-     * @param onTouchLetterChangeListenner
+     * @param onTouchLetterChangeListener
      */
-    public void setOnTouchLetterChangeListenner(OnTouchLetterChangeListenner onTouchLetterChangeListenner){
-        this.onTouchLetterChangeListenner = onTouchLetterChangeListenner;
+    public void setOnTouchLetterChangeListener(OnTouchLetterChangeListener onTouchLetterChangeListener){
+        this.onTouchLetterChangeListener = onTouchLetterChangeListener;
     }
 
     @Override
@@ -299,8 +299,8 @@ public class SlideBar extends View{
                 isTouch = true;
                 if(index!=oldIndex && index>=0 && index<letters.length){
                     this.index = index;
-                    if(onTouchLetterChangeListenner!=null){//监听回调
-                        onTouchLetterChangeListenner.onTouchLetterChange(isTouch, letters[index]);
+                    if(onTouchLetterChangeListener !=null){//监听回调
+                        onTouchLetterChangeListener.onTouchLetterChange(isTouch, letters[index]);
                     }
                     invalidate();
                 }
@@ -311,8 +311,8 @@ public class SlideBar extends View{
                 isTouch = true;
                 if(index!=oldIndex && index>=0 && index<letters.length){
                     this.index = index;
-                    if(onTouchLetterChangeListenner!=null){//监听回调
-                        onTouchLetterChangeListenner.onTouchLetterChange(isTouch, letters[index]);
+                    if(onTouchLetterChangeListener !=null){//监听回调
+                        onTouchLetterChangeListener.onTouchLetterChange(isTouch, letters[index]);
                     }
                     invalidate();
                 }
@@ -322,8 +322,8 @@ public class SlideBar extends View{
 
                 isTouch = false;
                 if(index>=0 && index<letters.length){
-                    if(onTouchLetterChangeListenner!=null){//监听回调
-                        onTouchLetterChangeListenner.onTouchLetterChange(isTouch, letters[index]);
+                    if(onTouchLetterChangeListener !=null){//监听回调
+                        onTouchLetterChangeListener.onTouchLetterChange(isTouch, letters[index]);
                     }
                 }
                 this.index = -1;
@@ -340,7 +340,7 @@ public class SlideBar extends View{
     /**
      * 字母改变监听接口
      */
-    public interface OnTouchLetterChangeListenner {
+    public interface OnTouchLetterChangeListener {
 
         void onTouchLetterChange(boolean isTouch, String letter);
     }

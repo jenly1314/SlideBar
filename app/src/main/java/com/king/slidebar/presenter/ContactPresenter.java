@@ -32,14 +32,14 @@ public class ContactPresenter {
 
     private String key;
 
-    public ContactPresenter(Context context,IContactView iContactView){
+    public ContactPresenter(Context context, IContactView iContactView) {
         this.context = context;
         this.iContactView = iContactView;
 
     }
 
 
-    public void loadListContact(){
+    public void loadListContact() {
 
 //        new Thread(new Runnable() {
 //            @Override
@@ -51,7 +51,7 @@ public class ContactPresenter {
 //            }
 //        });
 
-        if(aueryHandler == null){
+        if (aueryHandler == null) {
             aueryHandler = new AsyncQueryHandler(context.getContentResolver()) {
                 @Override
                 public void startQuery(int token, Object cookie, Uri uri, String[] projection, String selection, String[] selectionArgs, String orderBy) {
@@ -70,25 +70,29 @@ public class ContactPresenter {
             };
         }
 
-        aueryHandler.startQuery(1,null, ContactsContract.CommonDataKinds.Phone.CONTENT_URI,
-                ContactDao.projection, "data1 is not null",
-                null, "sort_key COLLATE LOCALIZED ASC");
+        aueryHandler.startQuery(1
+                , null
+                , ContactsContract.CommonDataKinds.Phone.CONTENT_URI
+                , ContactDao.projection
+                , "data1 is not null"
+                , null
+                , "sort_key COLLATE LOCALIZED ASC");
 
 
     }
 
-    private List<Contact> testData(){
+    private List<Contact> testData() {
         List<Contact> list = new ArrayList<>();
-        String[] letters = { "A", "B", "C", "D", "E", "F", "G",
+        String[] letters = {"A", "B", "C", "D", "E", "F", "G",
                 "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T",
-                "U", "V", "W", "X", "Y", "Z" ,"#"};
+                "U", "V", "W", "X", "Y", "Z", "#"};
         int len = letters.length;
         for (int i = 0; i < len; i++) {
 
-            for(int j = 0;j<4;j++){
+            for (int j = 0; j < 4; j++) {
                 Contact c = new Contact();
-                c.setName(letters[i] + letters[j] + letters[i%len]);
-                c.setNumber("151" + i + "888" + j + ""+ j*i);
+                c.setName(letters[i] + letters[j] + letters[i % len]);
+                c.setNumber("151" + i + "888" + j + "" + j * i);
                 list.add(c);
             }
 
@@ -97,18 +101,18 @@ public class ContactPresenter {
         return list;
     }
 
-    public void showLetter(String letter){
+    public void showLetter(String letter) {
         this.key = letter;
-        if(handler == null){
-            handler = new Handler(){
+        if (handler == null) {
+            handler = new Handler() {
                 @Override
                 public void handleMessage(Message msg) {
                     super.handleMessage(msg);
-                    switch (msg.what){
+                    switch (msg.what) {
                         case 1:
                             iContactView.showLetter(key);
                             handler.removeMessages(2);
-                            handler.sendEmptyMessageDelayed(2,500);
+                            handler.sendEmptyMessageDelayed(2, 500);
                             break;
                         case 2:
                             iContactView.hideLetter();
@@ -120,7 +124,6 @@ public class ContactPresenter {
         handler.sendEmptyMessage(1);
 
     }
-
 
 
 }

@@ -1,0 +1,18 @@
+[
+  {
+    "buildCode":"0102",
+    "buildId":3,
+    "buildName":"测试社区楼栋",
+    "communityId":13,
+    "createTime":"2018-06-1410:48:40",
+    "updateTime":"2018-07-0418:17:52"
+  },
+  {
+    "buildCode":"01",
+    "buildId":15,
+    "buildName":"01",
+    "communityId":13,
+    "createTime":"2018-09-1119:44:12",
+    "updateTime":"2018-09-1119:44:12"
+  }
+]
