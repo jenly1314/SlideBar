@@ -3,7 +3,6 @@
 [![](https://jitpack.io/v/jenly1314/SlideBar.svg)](https://jitpack.io/#jenly1314/SlideBar)
 [![API](https://img.shields.io/badge/API-9%2B-blue.svg?style=flat)](https://android-arsenal.com/api?level=9)
 [![License](https://img.shields.io/badge/license-Apche%202.0-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0)
-[![Blog](https://img.shields.io/badge/blog-Jenly-9933CC.svg)](http://blog.csdn.net/jenly121)
 
 SlideBar for Android 一个很好用的联系人快速索引。
 
@@ -32,8 +31,20 @@ SlideBar for Android 一个很好用的联系人快速索引。
     implementation 'com.github.jenly1314:SlideBar:1.1.0'
     ```
     
-## 说明
+## 使用
 
+#### 布局示例
+```xml
+    <com.king.view.slidebar.SlideBar
+        android:id="@+id/slideBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp" />
+```
+
+更多使用详情，请查看[app](app)中的源码使用示例或直接查看[API帮助文档](https://jitpack.io/com/github/jenly1314/SlideBar/latest/javadoc/)
+
+#### 实现说明
 具体实现详情请戳[传送门](http://blog.csdn.net/jenly121/article/details/48466641)
 
 ## 赞赏
