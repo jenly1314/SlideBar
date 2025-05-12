@@ -49,6 +49,9 @@ SlideBar for Android 一个很好用的联系人快速索引。
 #### 实现说明
 具体实现详情请戳[传送门](http://blog.csdn.net/jenly121/article/details/48466641)
 
+## 相关推荐
+- [compose-component](https://github.com/jenly1314/compose-component) 一个Jetpack Compose的组件库；主要提供了一些小组件，便于快速使用
+
 ---
 
 ![footer](https://jenly1314.github.io/page/footer.svg)
